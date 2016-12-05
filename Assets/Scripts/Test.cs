@@ -9,7 +9,8 @@ public class Test : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        _obj = (GameObject)Resources.Load("Prefabs/Login");
+		_obj = ResourceManager.Instance.LoadAsset<GameObject> ("Prefabs/Login");
+//        _obj = (GameObject)Resources.Load("Prefabs/Login");
         if (null == _obj)
         {
             Debug.LogFormat("{0} is null", "Login.prefab");

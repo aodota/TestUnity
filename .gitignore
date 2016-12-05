@@ -2,3 +2,5 @@ Temp
 *.meta
 Library
 .vs
+StreamingAssets
+obj
